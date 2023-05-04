@@ -34,6 +34,9 @@ function Footer(){
                             <span>Google Play Store</span>
                         </div>
                     </div>
+                    <div className="box3">
+                        <span>hí ae</span>
+                    </div>
                 </div>
             </footer>
         </div>
