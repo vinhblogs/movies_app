@@ -5,17 +5,21 @@ import Header from './components/header/Header';
 import HomePages from './home/HomePages';
 import Footer from './components/footer/Footer';
 import SinglePage from './components/watch/SinglePage';
+import Login from './components/login/Login';
 
 function App() {
   return (
     <div>
       <Router>
-        <Header/>
+        
         <Switch>
-          <Route exact path='/'component={HomePages}/>         
-          <Route   exact path = '/singlepage/:id' component={SinglePage} />         
+          
+          <Route path='/home'component={HomePages}/>         
+          <Route path = '/singlepage/:id' component={SinglePage} />   
+           
         </Switch>
-        <Footer/>
+        
+        <Route exact path= '/login' component={Login}/> 
       </Router>
     </div>
     
